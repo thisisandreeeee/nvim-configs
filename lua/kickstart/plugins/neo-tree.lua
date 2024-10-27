@@ -14,7 +14,11 @@ return {
     { '<C-n>', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   init = function()
-    vim.cmd 'Neotree toggle'
+    -- Check if the current buffer is a directory
+    local current_buffer = vim.fn.expand '%:p'
+    if vim.fn.isdirectory(current_buffer) == 1 then
+      vim.cmd 'Neotree toggle'
+    end
   end,
   opts = {
     close_if_last_window = true,
