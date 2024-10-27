@@ -13,10 +13,14 @@ return {
   keys = {
     { '<C-n>', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
+  init = function()
+    vim.cmd 'Neotree toggle'
+  end,
   opts = {
     close_if_last_window = true,
     use_libuv_file_watcher = true,
     filesystem = {
+      hijack_netrw_behavior = 'open_default',
       window = {
         mappings = {
           ['<C-n>'] = 'close_window',

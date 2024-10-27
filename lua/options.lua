@@ -68,3 +68,7 @@ vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to de
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+
+-- Disable netrw so that we can use neotree instead
+vim.g.loaded_netrw = 0
+vim.g.loaded_netrwPlugin = 0
