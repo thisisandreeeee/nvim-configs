@@ -28,6 +28,9 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Search incrementally as you type
+vim.opt.incsearch = true
+
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
 
