@@ -18,8 +18,8 @@ return {
   end,
   opts = {
     close_if_last_window = true,
-    use_libuv_file_watcher = true,
     filesystem = {
+      use_libuv_file_watcher = true,
       hijack_netrw_behavior = 'open_default',
       window = {
         mappings = {
