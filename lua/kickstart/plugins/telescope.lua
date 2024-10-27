@@ -80,7 +80,6 @@ return {
       -- Add keymaps for commonly used searches
       vim.keymap.set('n', '<C-o>', builtin.find_files, { desc = 'Search Files' })
       vim.keymap.set('n', '<C-f>', builtin.live_grep, { desc = 'Search by Grep' })
-      vim.keymap.set('n', '<C-b>', builtin.buffers, { desc = 'Search Buffers' })
 
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
