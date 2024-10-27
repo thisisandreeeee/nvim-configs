@@ -21,10 +21,10 @@ return {
         },
       }
       -- Buffer navigation keymaps
-      vim.keymap.set('n', '<S-l>', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
-      vim.keymap.set('n', '<S-h>', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true })
-      vim.keymap.set('n', '<S-w>', '<cmd>bdelete<CR>', { noremap = true, silent = true })
-      vim.keymap.set('n', '<S-Tab>', ':b#<CR>', { noremap = true, silent = true })
+      vim.keymap.set('n', '<S-l>', '<cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true, desc = 'Go to next buffer' })
+      vim.keymap.set('n', '<S-h>', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, silent = true, desc = 'Go to previous buffer' })
+      vim.keymap.set('n', '<S-w>', '<cmd>bdelete<CR>', { noremap = true, silent = true, desc = 'Delete current buffer' })
+      vim.keymap.set('n', '<S-Tab>', ':b#<CR>', { noremap = true, silent = true, desc = 'Go to most recent buffer' })
     end,
   },
 }

@@ -29,10 +29,10 @@ return {
     init = function()
       vim.keymap.set('n', 'zR', function()
         require('ufo').openAllFolds()
-      end)
+      end, { desc = 'Open all folds' })
       vim.keymap.set('n', 'zM', function()
         require('ufo').closeAllFolds()
-      end)
+      end, { desc = 'Close all folds' })
     end,
   },
 }
